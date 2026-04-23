@@ -97,9 +97,9 @@ python xcheckpath.py
 
 Useful for cleaning up broken Windows environment settings.
 
-## Maybe Scripts
+## Other Scripts
 
-These scripts are useful enough to keep in the repo, but they are narrower or less polished than the ones above.
+These are narrower or less polished than the ones above.
 
 ### `xprocess_dir.py`
 
