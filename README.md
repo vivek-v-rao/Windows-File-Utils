@@ -15,8 +15,8 @@ Recursively scans a directory, filters by extension or glob, and reports file si
 Typical uses:
 
 ```powershell
-python xfile_size.py --dir C:\python\fortran --glob "*.exe"
-python xfile_size.py --dir C:\python\fortran --glob "*.exe" --summary
+python xfile_size.py --dir C:\python --glob "*.exe"
+python xfile_size.py --dir C:\python --glob "*.exe" --summary
 python xfile_size.py --dir C:\python\code --ext py --summary
 ```
 
@@ -42,10 +42,10 @@ It can either:
 Examples:
 
 ```powershell
-dir /s C:\python\fortran > temp.txt
+dir /s C:\python > temp.txt
 python xdisk_space.py temp.txt
 python xdisk_space.py temp.txt --max-depth 2
-python xdisk_space.py --dir C:\python\fortran --max-depth 1
+python xdisk_space.py --dir C:\python --max-depth 1
 ```
 
 This is useful when you want a CSV you can open in Excel or sort further with pandas.
@@ -140,10 +140,10 @@ Recursively scans a directory and summarizes storage by file extension. It shows
 Examples:
 
 ```powershell
-python xext_summary.py C:\python\fortran
-python xext_summary.py C:\python\fortran --sort size-desc
-python xext_summary.py C:\python\fortran --top 20 --top-dirs 3
-python xext_summary.py C:\python\fortran --min-size-mb 0
+python xext_summary.py C:\python
+python xext_summary.py C:\python --sort size-desc
+python xext_summary.py C:\python --top 20 --top-dirs 3
+python xext_summary.py C:\python --min-size-mb 0
 ```
 
 This is useful when you want to know whether `.exe`, `.dll`, `.csv`, `.zip`, `.log`, or no-extension files dominate a tree.
